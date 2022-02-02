@@ -12,12 +12,14 @@ USE App\Http\Controllers\ProductController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+ 
 Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/product', [ProductController::class , 'index']);
 Route::get('/product/create', [ProductController::class , 'create']);
 Route::post('/product/create/store', [ProductController::class , 'store']);
+Route::get('/product/{id}/edit',[ProductController::class, 'edit']);
+Route::post('/product/{id}/edit',[ProductController::class, 'update']);
 
 
