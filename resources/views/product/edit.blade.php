@@ -6,6 +6,8 @@
 			<div class="text-left"><a href="/product" class="btn btn-outline-primary">Product List</a></div>
 
 			<form id="edit-frm" method="POST" action="" class="border p-3 mt-2">
+				{{ csrf_field() }}
+				{{ method_field('put') }}
 				<div class="control-group col-6 text-left">
 					<label for="title">Title</label>
 					<div>

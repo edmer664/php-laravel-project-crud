@@ -17,9 +17,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/product', [ProductController::class , 'index']);
-Route::get('/product/create', [ProductController::class , 'create']);
-Route::post('/product/create/store', [ProductController::class , 'store']);
-Route::get('/product/{id}/edit',[ProductController::class, 'edit']);
-Route::post('/product/{id}/edit',[ProductController::class, 'update']);
 
+Route::get('/product/create', [ProductController::class , 'create']);
+Route::post('/product/create', [ProductController::class , 'store']);
+
+Route::get('/product/{product}/edit',[ProductController::class, 'edit']);
+Route::put('/product/{product}/edit',[ProductController::class, 'update']);
+
+Route::delete('/product/{product}',[ProductController::class, 'destroy']);
 

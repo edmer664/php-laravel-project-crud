@@ -45,7 +45,7 @@
 			<div class="modal-body">Are you sure to delete this record?</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-default" onClick="dismissModel()">Cancel</button>
-				<form id="delete-frm" class="" action="" method="POST">
+				<form id="delete-frm" class="" action="{{url('product/{product}')}}" method="POST">
                     @method('DELETE')
                     @csrf
                     <button class="btn btn-danger">Delete</button>
