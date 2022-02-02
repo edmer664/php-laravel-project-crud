@@ -42,7 +42,7 @@ class ProductController extends Controller
             'price' => $request->price
         ]);
         
-        return redirect('product/' . $newPost->id . '/edit');
+        return redirect('product/');
     }
 
     /**

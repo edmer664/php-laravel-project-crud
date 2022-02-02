@@ -19,7 +19,7 @@
 					@forelse($products as $product)
 					<tr>
 						<td>{!! $product->title !!}</td>
-						<td class="pr-5 text-right">{!! $product->price !!}</td>
+						<td class="pr-5">{!! $product->price !!}</td>
 						<td>{!! $product->short_notes !!}</td>
 						<td><a href="product/{!! $product->id !!}/edit"
 							class="btn btn-outline-primary">Edit</a>

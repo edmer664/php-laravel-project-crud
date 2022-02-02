@@ -15,6 +15,13 @@ class CreateProductsTable extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
+            
+            /* Add additional fields */
+            $table->text('title');  // product title
+            $table->text('short_notes');   // short notes
+            $table->decimal('price', 10, 2); // price
+            
+            
             $table->timestamps();
         });
     }
