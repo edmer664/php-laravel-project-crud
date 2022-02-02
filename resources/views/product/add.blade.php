@@ -5,7 +5,7 @@
 			<h1 class="display-one mt-5">PHP Laravel Project - CRUD</h1>
 			<div class="text-left"><a href="/product" class="btn btn-outline-primary">Product List</a></div>
 
-			<form id="add-frm" method="POST" action="{{url('product/create/store')}}" class="border p-3 mt-2">
+			<form id="add-frm" method="POST" action="{{url('product/create')}}" class="border p-3 mt-2">
 				<div class="control-group col-6 text-left">
 					<label for="title">Title</label>
 					<div>
